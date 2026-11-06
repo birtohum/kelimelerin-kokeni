@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bu kelimeler nereden geldi?</title>
+<meta name="description" content="Bir Türkçe metin yapıştır: her kelime kökenine göre renklenir. Arapça, Farsça, Fransızca, İtalyanca, Yunanca… Vikisözlük'ün 12.000 kelimelik köken verisiyle.">
+<meta property="og:title" content="Bu kelimeler nereden geldi?">
+<meta property="og:description" content="Türkçe bir metnin kelimelerini kökenine göre renklendir. Vikisözlük verisiyle.">
+<meta property="og:image" content="https://birtohum.github.io/kelimelerin-kokeni/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stil.css?v=1">
+</head>
+<body>
+<main>
+  <header>
+    <p class="ust-etiket">Vikisözlük · 12.020 kelime</p>
+    <h1>Bu kelimeler<br>nereden geldi?</h1>
+    <p class="giris">Bir metin yapıştır ya da bir örnek seç. Her kelime, Türkçeye geldiği dile göre renklenir.</p>
+  </header>
+
+  <section class="giris-kutu">
+    <div class="ornekler" id="ornekler"></div>
+    <textarea id="metin" rows="5" aria-label="Metin" spellcheck="false"></textarea>
+  </section>
+
+  <section class="sonuc">
+    <div class="cubuk" id="cubuk" aria-hidden="true"></div>
+    <div class="lejant" id="lejant"></div>
+    <p class="ozet" id="ozet" aria-live="polite"></p>
+    <div class="boyali" id="boyali"></div>
+  </section>
+
+  <footer class="dip">
+    <p><b>Veri:</b> İngilizce Vikisözlük'ün Türkçe maddeleri, <a href="https://kaikki.org/dictionary/Turkish/">kaikki.org</a> dökümü (Ekim 2026), CC BY-SA 4.0. Her kelime için köken zinciri okunur; Osmanlıca ara halka sayılıp atlanır ve kelimenin Türkçeye girdiği ilk dil alınır. Türkçe bir kökten türetilmiş kelimeler (sevgi ← sev-) kökün kökenini alır.</p>
+    <p><b>Sınırlar:</b> Ekli kelimeler sözlükteki en uzun eşleşen köke göre bulunur (kitaplarımızdan → kitap); bu yöntem bazen yanılır. Vikisözlük'te kökeni yazmayan kelimeler gri, "bilinmiyor" olarak kalır. "Diğer" Ermenice, İspanyolca, İbranice gibi daha seyrek dilleri toplar. Bir kelimenin bir dilden gelmesi, o dile özgü olduğu anlamına gelmez; örneğin Farsça yoluyla gelen bazı kelimeler daha eski dillere dayanır.</p>
+    <p><a href="https://github.com/birtohum/kelimelerin-kokeni">Kaynak kodu</a> · <a href="https://birtohum.github.io/">birtohum</a></p>
+  </footer>
+</main>
+<script src="uygulama.js?v=1"></script>
+</body>
+</html>
