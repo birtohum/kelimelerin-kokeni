@@ -68,6 +68,9 @@ function yuzdeEk(n) {
 
 async function baslat() {
   S = await (await fetch("veri/kokenler.json")).json();
+  const R = {arap: "#4ade80", fars: "#c084fc", fransiz: "#60a5fa", italyan: "#f97316", yunan: "#22d3ee", ingiliz: "#f472b6", turk: "#f87171", latin: "#facc15", mogol: "#a3e635"};
+  $("kelHero").innerHTML = ["kitap", "pencere", "otobüs", "çorba", "lokanta", "kahve", "bardak", "gözlük"].filter((w) => S[w] && DIL[S[w]])
+    .map((w) => `<span style="color:${R[S[w]] || "#ddd"}">${w}<small>${DIL[S[w]]}</small></span>`).join("");
   ORNEK.forEach(([ad, m], i) => {
     const b = document.createElement("button"); b.textContent = ad; b.type = "button";
     b.onclick = () => { $("metin").value = m; [...$("ornekler").children].forEach((x) => x.classList.toggle("secili", x === b)); boya(); };

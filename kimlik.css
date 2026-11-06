@@ -1,0 +1,12 @@
+:root{--zemin:#14131a;--kart:#1f1d29;--yazi:#f3efe6;--soluk:#a39eb3;--cizgi:#34313f;--vurgu:#f2c14e}
+body{font-family:Spectral,Georgia,serif;font-size:17px;background:var(--zemin)}
+h1{font-family:Spectral,Georgia,serif;font-weight:800;font-style:italic;font-size:clamp(50px,9.5vw,108px);letter-spacing:-.02em}
+.ust-etiket{font-family:"Space Mono",monospace;letter-spacing:.14em}
+textarea{font-family:Spectral,Georgia,serif!important;font-size:18px!important}
+button{font-family:"Space Mono",monospace!important}
+h1{text-wrap:balance}
+.dip{border-top:1px solid var(--cizgi)}
+/*2*/
+.kel-hero{display:flex;flex-wrap:wrap;gap:8px 22px;margin:18px 0 6px;font-family:Spectral,Georgia,serif}
+.kel-hero span{font-size:clamp(22px,3.4vw,36px);font-weight:800;line-height:1.1}
+.kel-hero small{display:block;font:400 12px "Space Mono",monospace;color:var(--soluk)}
